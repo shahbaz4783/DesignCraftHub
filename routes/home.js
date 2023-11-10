@@ -1,8 +1,12 @@
 import express from "express";
-const router = express.Router()
+import path from "path";
+import rootDir from '../utils/rootPath.js'
+
+const router = express.Router();
+
 
 router.get('/', (req, res) => {
-    res.send('Working!!!')
+    res.sendFile(path.join(rootDir, 'views', 'home.html'));
 })
 
 
