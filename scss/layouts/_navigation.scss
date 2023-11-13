@@ -1,0 +1,139 @@
+header {
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	width: 100vw;
+	transition: background-color 0.4s ease;
+	background-color: transparent;
+	margin-right: 20px;
+    background-color: #e5f4fd;
+
+
+	&.background {
+		background-color: #3498DB;
+	}
+
+	#logo {
+        width: 10%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+	&:last-child {
+		display: flex;
+	}
+
+	@media screen and (max-width: 768px) {
+		nav {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #181e27;
+			margin: 0;
+			border-bottom: 2px solid;
+			height: 6%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			ul {
+				display: flex;
+				justify-content: space-between;
+				padding: 0;
+				width: 90%;
+
+				li {
+					&:first-child {
+						display: flex;
+					}
+				}
+			}
+		}
+
+		.container {
+			width: 60%;
+			margin: 1em;
+		}
+	}
+}
+
+nav ul {
+	display: flex;
+
+	li {
+		list-style: none;
+		display: flex;
+		justify-content: space-evenly;
+
+		a {
+			text-decoration: none;
+			margin: 20px;
+            color: #3498DB !important;
+		}
+	}
+}
+
+// search
+
+
+::placeholder {
+	color: whitesmoke;
+	font-size: 0.8rem;
+}
+
+#search-input:focus,
+#search-input:hover {
+	outline: none;
+	border-color: rgba(234, 76, 137, 0.4);
+	background-color: #fff;
+	box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 40%;
+
+	.search-form {
+		border: 1.5px solid #3498DB;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		border-radius: 1.5em;
+		overflow: hidden;
+
+		input {
+			padding: 0.8em;
+			width: 100%;
+			background-color: #3498DB;
+			border: none;
+			color: white;
+
+			&:focus::placeholder {
+				opacity: 0;
+				color: transparent;
+			}
+		}
+
+		.icon {
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			display: flex;
+			align-items: center;
+
+			img {
+				display: block;
+				margin: auto;
+			}
+		}
+	}
+}

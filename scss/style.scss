@@ -1,4 +1,2 @@
-body {
-    background-color: black;
-    color: white;
-}
+@forward 'base';
+@forward 'layouts';
