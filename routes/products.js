@@ -1,8 +1,9 @@
 import express from 'express';
+
 const router = express.Router();
 
-router.get('/contact', (req, res) => {
-	res.render('contact.ejs');
+router.get('/products', (req, res) => {
+	res.render('products.ejs');
 });
 
 export default router;

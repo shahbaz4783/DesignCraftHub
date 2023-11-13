@@ -1,22 +1,23 @@
 import express from 'express';
 import homeRoute from './routes/home.js';
-import path from 'path'
 import adminRoute from './routes/admin.js';
-import rootDir from './utils/rootPath.js'
 import contactRoute from './routes/contact.js';
+import aboutRoute from './routes/about.js';
+import productRoute from './routes/products.js';
+import { error } from './controllers/error.js'
 
 const app = express();
-const port = 3000;
 
+app.use(express.static('public'))
 app.use(homeRoute);
 app.use(adminRoute);
 app.use(contactRoute);
-app.use(express.static(path.join(rootDir, 'public')))
+app.use(aboutRoute);
+app.use(productRoute);
+app.use(error);
 
-app.use((req, res) => {
-    res.status(404).sendFile(path.join(rootDir, 'views', '404.html'));
-})
-
+// Port
+const port = 3000;
 app.listen(port, () => {
-	console.log(`Server is running at port ${port}`);
+	console.log(`Listening on port ${port}`);
 });
