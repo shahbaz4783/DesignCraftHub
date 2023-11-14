@@ -1,5 +1,4 @@
 .popular_categories {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
 
@@ -16,6 +15,7 @@
                 display: flex;
                 flex-direction: column;
                 padding: 1em;
+                gap: 1em;
                 border-radius: 0.6em;
 
                 div {

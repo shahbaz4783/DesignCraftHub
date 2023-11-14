@@ -1,0 +1,31 @@
+.feature {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+
+    .bigImg {
+        border-radius: 0.8em;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+        
+        img {
+            width: 100%;
+            aspect-ratio: 4/3;
+        }
+    }
+
+    .feat-product-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        
+        .feat-product {
+            display: flex;
+            gap: 1em;
+
+            .product-card {
+                border: 1px solid black;
+            }
+        }
+    }
+}
