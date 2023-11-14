@@ -327,6 +327,9 @@ footer {
   display: flex;
   flex-direction: column;
   height: auto;
+  padding: 1em;
+  margin-top: 4em;
+  text-align: center;
 }
 footer .links {
   display: flex;
@@ -556,7 +559,7 @@ footer .socials .social-media .social-link:hover {
   position: absolute;
   bottom: 0;
   color: white;
-  margin-left: 1.2em;
+  margin: 0 1.2em;
 }
 .three-box-layout .container .about-box {
   border: 2px solid black;
