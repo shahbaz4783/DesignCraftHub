@@ -1,0 +1,30 @@
+.three-box-layout {
+	display: flex;
+	flex-direction: column;
+
+	.container {
+		display: flex;
+		width: 100%;
+		gap: 2em;
+		flex-wrap: wrap;
+
+		.sale-box {
+			position: relative;
+			flex: 1;
+			display: flex;
+
+			img {
+				width: 100%;
+				aspect-ratio: 5/4;
+				border-radius: 0.8em;
+			}
+
+			div {
+				position: absolute;
+				bottom: 0;
+				color: white;
+				margin-left: 1.2em;
+			}
+		}
+	}
+}
