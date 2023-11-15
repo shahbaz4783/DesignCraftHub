@@ -1,31 +1,23 @@
-<form class="form" action="/add-product" method="post">
-    <p class="title">Register </p>
-    <p class="message">Signup now and get full access to our app. </p>
+<form class="form" action="/admin/add-product" method="post">
+    <p class="title">Add a new Product </p>
         <div class="flex">
         <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>Firstname</span>
+            <input class="input" name="title" type="text" placeholder="" required="">
+            <span>Title</span>
         </label>
 
         <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>Lastname</span>
+            <input class="input" name="tag" type="text" placeholder="" required="">
+            <span>Tag</span>
         </label>
     </div>  
-            
-    <label>
-        <input class="input" type="email" placeholder="" required="">
-        <span>Email</span>
-    </label> 
         
     <label>
-        <input class="input" type="password" placeholder="" required="">
-        <span>Password</span>
+        <input class="input" name="price" type="number" placeholder="" required="">
+        <span>Price</span>
     </label>
     <label>
-        <input class="input" type="password" placeholder="" required="">
-        <span>Confirm password</span>
+        <textarea id="" name="description" cols="30" rows="10" class="input" placeholder="description"></textarea>
     </label>
     <button class="submit">Submit</button>
-    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
 </form>

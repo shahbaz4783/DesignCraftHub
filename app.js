@@ -8,9 +8,11 @@ import { error } from './controllers/error.js'
 
 const app = express();
 
+app.use(express.urlencoded({ extended: false }));
+
 app.use(express.static('public'))
+app.use('/admin', adminRoute);
 app.use(homeRoute);
-app.use(adminRoute);
 app.use(contactRoute);
 app.use(aboutRoute);
 app.use(productRoute);
