@@ -1,0 +1,11 @@
+.products-list {
+	flex: 5;
+	background-color: rgb(209, 239, 222);
+
+	.products-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2em;
+
+	}
+}
