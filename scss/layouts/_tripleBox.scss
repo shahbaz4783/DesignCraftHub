@@ -4,9 +4,9 @@
 
 	.container {
 		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
 		gap: 2em;
-		flex-wrap: wrap;
 		justify-content: space-between;
 
 		.sale-box {
