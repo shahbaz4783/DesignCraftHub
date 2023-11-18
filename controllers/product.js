@@ -5,7 +5,6 @@ export const getAddProduct = (req, res) => {
 		product: products,
 		pageTitle: 'Add Products - Health Harbour',
 	});
-
 };
 
 export const postProduct = (req, res) => {
