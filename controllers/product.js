@@ -1,4 +1,4 @@
-const products = [];
+export const products = [];
 
 export const getAddProduct = (req, res) => {
 	res.render('admin.ejs', {
