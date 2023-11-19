@@ -897,24 +897,22 @@ textarea {
   flex-direction: column;
   gap: 0.5em;
   justify-content: space-evenly;
-  background-color: var(--dark2);
+  background-color: red;
   border-radius: 0.4em;
   height: 100%;
   padding: 1.5em 0;
 }
 .contact-details .details-head {
-  color: var(--light1);
   width: 90%;
   margin: 0 auto;
 }
 .contact-details .details-head p {
-  color: var(--smoke);
+  color: green;
 }
 .contact-details .socials {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 1em;
-  color: var(--light1);
 }
 .contact-details .socials .social-icons-box {
   display: flex;
@@ -926,7 +924,7 @@ textarea {
   font-size: 1.3em;
 }
 .contact-details .socials .social-icons-box .social-icon:hover {
-  color: var(--light3);
+  color: aliceblue;
 }
 @media screen and (max-width: 768px) {
   .contact-details {
@@ -943,8 +941,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark3);
-  color: var(--light1);
   padding: 0.3em;
   border-radius: 0.2em;
   width: 15%;
@@ -955,11 +951,9 @@ textarea {
 .contact-details .card h3 {
   margin: 0;
   font-weight: bolder;
-  color: var(--light3);
 }
 .contact-details .card p {
   margin: 0;
-  color: var(--smoke);
 }
 
 .homepage {
