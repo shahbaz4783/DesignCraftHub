@@ -1,0 +1,14 @@
+[
+	{
+		"title": "Treadmill",
+		"tag": "running",
+		"price": "1190",
+		"description": "This is a treadmill"
+	},
+	{
+		"title": "Elliptical",
+		"tag": "running",
+		"price": "1449",
+		"description": "This is an elliptical"
+	}
+]
