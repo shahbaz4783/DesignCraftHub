@@ -1,13 +1,8 @@
 import express from 'express';
-import { products } from '../controllers/product.js';
+import { getProducts } from '../controllers/product.js';
 
 const router = express.Router();
 
-router.get('/products', (req, res) => {
-	res.render('products.ejs', {
-		pageTitle: 'Shop - Health Harbour',
-		product: products,
-	});
-});
+router.get('/products', getProducts);
 
 export default router;

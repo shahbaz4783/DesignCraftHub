@@ -1,15 +1,18 @@
 const items = [];
 
 export default class Item {
-	constructor(t) {
-		this.title = t;
+	constructor(title, tag, price, description) {
+		this.title = title;
+		this.tag = tag;
+		this.price = price;
+		this.description = description;
 	}
 
 	save() {
 		items.push(this);
 	}
 
-	fetchAll() {
-		return this.items;
+	static fetchAll() {
+		return items;
 	}
 }
