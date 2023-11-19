@@ -19,9 +19,10 @@ export const postProduct = (req, res) => {
 };
 
 export const getProducts = (req, res) => {
-	const products = Item.fetchAll();
-	res.render('products.ejs', {
-		product: products,
-		pageTitle: 'Shop - Health Harbour',
+	Item.fetchAll(items => {
+		res.render('products.ejs', {
+			product: items,
+			pageTitle: 'Shop - Health Harbour',
+		});
 	});
 };

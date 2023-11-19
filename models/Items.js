@@ -1,6 +1,18 @@
 import fs from 'fs';
 import path from 'path';
 
+const pathOfData = path.join('data', 'products.json');
+
+const getItemsFromFile = (cb) => {
+	fs.readFile(pathOfData, (err, content) => {
+		if (err) {
+			cb([]);
+		} else {
+			cb(JSON.parse(content));
+		}
+	});
+};
+
 export default class Item {
 	constructor(title, tag, price, description) {
 		this.title = title;
@@ -10,12 +22,7 @@ export default class Item {
 	}
 
 	save() {
-		const pathOfData = path.join('data', 'products.json');
-		fs.readFile(pathOfData, (err, content) => {
-			let items = [];
-			if (!err) {
-				items = JSON.parse(content);
-			}
+		getItemsFromFile((items) => {
 			items.push(this);
 			fs.writeFile(pathOfData, JSON.stringify(items), (err) => {
 				console.log(err);
@@ -23,5 +30,7 @@ export default class Item {
 		});
 	}
 
-	static fetchAll() {}
+	static fetchAll(cb) {
+		getItemsFromFile(cb);
+	}
 }

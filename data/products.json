@@ -10,5 +10,17 @@
 		"tag": "running",
 		"price": "1449",
 		"description": "This is an elliptical"
+	},
+	{
+		"title": "Rower",
+		"tag": "rower",
+		"price": "460",
+		"description": "This is a rower"
+	},
+	{
+		"title": "Climber",
+		"tag": "climber",
+		"price": "1390",
+		"description": "This is a climber"
 	}
 ]
