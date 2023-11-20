@@ -4,7 +4,18 @@ export const getProducts = (req, res) => {
 	Item.fetchAll((items) => {
 		res.render('shop/products.ejs', {
 			product: items,
-			pageTitle: 'Shop - Health Harbour',
+			pageTitle: 'Products - Health Harbour',
+			path: '/products',
+		});
+	});
+};
+
+export const getStore = (req, res) => {
+	Item.fetchAll((items) => {
+		res.render('shop/store.ejs', {
+			product: items,
+			pageTitle: 'Store - Health Harbour',
+			path: '/store',
 		});
 	});
 };
