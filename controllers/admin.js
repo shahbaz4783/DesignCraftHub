@@ -1,7 +1,7 @@
 import Item from '../models/Items.js';
 
 export const getAddProduct = (req, res) => {
-	res.render('admin.ejs', {
+	res.render('admin/admin.ejs', {
 		pageTitle: 'Add Products - Health Harbour',
 	});
 };
@@ -16,13 +16,4 @@ export const postProduct = (req, res) => {
 	item.save();
 	console.log(item);
 	res.redirect('/products');
-};
-
-export const getProducts = (req, res) => {
-	Item.fetchAll(items => {
-		res.render('products.ejs', {
-			product: items,
-			pageTitle: 'Shop - Health Harbour',
-		});
-	});
 };
