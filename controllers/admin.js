@@ -17,3 +17,12 @@ export const postProduct = (req, res) => {
 	console.log(item);
 	res.redirect('/products');
 };
+
+export const getProducts = (req, res) => {
+	Item.fetchAll(items => {
+		res.render('admin/products.ejs', {
+			product: items,
+			pageTitle: 'Modify Products - Health Harbour',
+		});
+	});
+};
