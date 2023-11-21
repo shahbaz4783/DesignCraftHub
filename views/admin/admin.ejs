@@ -1,7 +1,27 @@
 <%- include('../partials/dochead') %>
 <%- include('../partials/navigation') %>
-<main>
+<main class="admin-panel">
     <%- include('../partials/adminNav') %>
-    <%- include('../layouts/add-product') %>
+    <section id="content">
+        <% if (path === '/add-product'){ %>
+        <%- include('../layouts/add-product') %>
+        <% } %>
+
+        <%  if (path === '/all-product'){ %>
+        <%- include('products') %>
+        <% } %>
+
+        <%  if (path === '/orders'){ %>
+        <%- include('../shop/orders') %>
+        <% } %>
+
+        <%  if (path === '/') { %>
+        <%- include('data') %>
+        <% } %>
+
+
+
+
+    </section>
 </main>
 <%- include('../partials/docbottom') %>

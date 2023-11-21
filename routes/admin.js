@@ -12,7 +12,7 @@ router.get('/add-product', getAddProduct);
 
 router.post('/add-product', postProduct);
 
-router.get('/products', getProducts);
+router.get('/all-products', getProducts);
 
 router.get('/', getAdminProfile)
 

@@ -1,11 +1,5 @@
 import Item from '../models/Items.js';
 
-export const getAddProduct = (req, res) => {
-	res.render('admin/admin.ejs', {
-		pageTitle: 'Add Products - Health Harbour',
-	});
-};
-
 export const postProduct = (req, res) => {
 	const item = new Item(
 		req.body.title,
@@ -18,17 +12,27 @@ export const postProduct = (req, res) => {
 	res.redirect('/products');
 };
 
+export const getAdminProfile = (req, res) => {
+	res.render('admin/admin.ejs', {
+		pageTitle: 'Admin Panel - Health Harbour',
+		path: '/'
+	});
+};
+
+export const getAddProduct = (req, res) => {
+	res.render('admin/admin.ejs', {
+		pageTitle: 'Add Products - Health Harbour',
+		path: '/add-product',
+	});
+};
+
 export const getProducts = (req, res) => {
 	Item.fetchAll(items => {
-		res.render('admin/products.ejs', {
+		res.render('admin/admin.ejs', {
 			product: items,
 			pageTitle: 'Modify Products - Health Harbour',
+			path: '/all-product',
 		});
 	});
 };
 
-export const getAdminProfile = (req, res) => {
-	res.render('admin/admin.ejs', {
-		pageTitle: 'Admin Panel - Health Harbour',
-	});
-}
