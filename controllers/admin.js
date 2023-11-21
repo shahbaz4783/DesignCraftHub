@@ -13,9 +13,12 @@ export const postProduct = (req, res) => {
 };
 
 export const getAdminProfile = (req, res) => {
-	res.render('admin/admin.ejs', {
-		pageTitle: 'Admin Panel - Health Harbour',
-		path: '/'
+	Item.fetchAll((items) => {
+		res.render('admin/admin.ejs', {
+			product: items,
+			pageTitle: 'Modify Products - Health Harbour',
+			path: '/',
+		});
 	});
 };
 
