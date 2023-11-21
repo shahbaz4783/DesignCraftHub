@@ -26,3 +26,9 @@ export const getProducts = (req, res) => {
 		});
 	});
 };
+
+export const getAdminProfile = (req, res) => {
+	res.render('admin/admin.ejs', {
+		pageTitle: 'Admin Panel - Health Harbour',
+	});
+}

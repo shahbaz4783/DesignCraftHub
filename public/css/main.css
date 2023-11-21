@@ -956,6 +956,56 @@ textarea {
   margin: 0;
 }
 
+.admin-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+.admin-products .card {
+  width: 100%;
+  border-radius: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+}
+.admin-products .card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.admin-products .imgDiv {
+  flex: 4;
+}
+.admin-products .imgDiv img {
+  width: 100%;
+}
+.admin-products .card:hover > .img {
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#9198e5, #712020);
+}
+.admin-products .textBox {
+  flex: 8;
+  margin-left: 10px;
+  font-family: "Poppins" sans-serif;
+}
+.admin-products .textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin-products .span {
+  font-size: 10px;
+}
+.admin-products .h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.admin-products .p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
 .homepage {
   display: flex;
   flex-direction: column;
