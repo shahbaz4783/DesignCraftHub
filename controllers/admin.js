@@ -5,6 +5,7 @@ export const postProduct = (req, res) => {
 		req.body.title,
 		req.body.tag,
 		req.body.price,
+		req.body.image,
 		req.body.description
 	);
 	item.save();
@@ -39,3 +40,12 @@ export const getProducts = (req, res) => {
 	});
 };
 
+export const getOrders = (req, res) => {
+	Item.fetchAll(items => {
+		res.render('admin/admin.ejs', {
+			product: items,
+			pageTitle: 'Your Orders - Health Harbour',
+			path: '/orders',
+		});
+	})
+};

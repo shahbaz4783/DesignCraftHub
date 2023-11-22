@@ -14,10 +14,11 @@ const getItemsFromFile = (cb) => {
 };
 
 export default class Item {
-	constructor(title, tag, price, description) {
+	constructor(title, tag, price, image, description) {
 		this.title = title;
 		this.tag = tag;
 		this.price = price;
+		this.image = image;
 		this.description = description;
 	}
 

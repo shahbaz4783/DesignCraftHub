@@ -1,5 +1,5 @@
 <form class="form" action="/admin/add-product" method="post">
-    <p class="title">Add a new Product </p>
+    <p class="title">Add a new Product</p>
         <div class="flex">
         <label>
             <input class="input" name="title" type="text" placeholder="" required="">
@@ -10,14 +10,19 @@
             <input class="input" name="tag" type="text" placeholder="" required="">
             <span>Tag</span>
         </label>
-    </div>  
+       </div>  
         
     <label>
         <input class="input" name="price" type="number" placeholder="" required="">
         <span>Price</span>
     </label>
     <label>
-        <textarea id="" name="description" cols="30" rows="10" class="input" placeholder="description"></textarea>
+        <input class="input" name="image" type="text" placeholder="" required="">
+        <span>Image</span>
+    </label>
+    <label>
+        <textarea id="" name="description" cols="30" rows="10" class="input" placeholder="" required=""></textarea>
+        <span>Description</span>
     </label>
     <button class="submit">Submit</button>
 </form>

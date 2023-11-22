@@ -25,11 +25,7 @@ export const getCart = (req, res) => {
 		pageTitle: 'Your Cart'
 	})
 }
-export const getOrders = (req, res) => {
-	res.render('shop/orders.ejs', {
-		pageTitle: 'Your Orders',
-	});
-};
+
 export const getCheckout = (req, res) => {
 	res.render('shop/checkout.ejs', {
 		pageTitle: 'Your Orders',
