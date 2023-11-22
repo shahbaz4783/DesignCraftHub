@@ -5,6 +5,11 @@
 	position: relative;
 	overflow: visible;
     border: 1px solid black;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		transform: scale(1.02);
+	}
 }
 
 .card-img {

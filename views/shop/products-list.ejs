@@ -5,10 +5,10 @@
 			<div class="card-img">
                 <img src="<%= item.image %>" alt="">
             </div>
-			<div class="card-info">
+			<a href="/products/<%= item.id %>" class="card-info">
 				<p class="text-title"><%= item.title %></p>
 				<p class="text-body"><%= item.description %></p>
-			</div>
+			</a>
 			<div class="card-footer">
 				<span class="text-title">$ <%= item.price %></span>
 				<div class="card-button">
@@ -18,5 +18,4 @@
 		</div>
 		<% } %>
 	</div>
-	<% console.log(locals.product) %>
 </aside>

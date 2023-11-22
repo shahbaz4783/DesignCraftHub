@@ -1,65 +1,151 @@
 [
-	{
-		"title": "Treadmill",
-		"tag": "running",
-		"price": "1190",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is a treadmill"
-	},
-	{
-		"title": "Elliptical",
-		"tag": "running",
-		"price": "1449",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is an elliptical"
-	},
-	{
-		"title": "Rower",
-		"tag": "rower",
-		"price": "460",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is a rower"
-	},
-	{
-		"title": "Climber",
-		"tag": "climber",
-		"price": "1390",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is a climber"
-	},
-	{
-		"title": "Earbuds",
-		"tag": "redmi",
-		"price": "323",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "efwv"
-	},
-	{
-		"title": "Mivi Soundbar",
-		"tag": "audio",
-		"price": "290",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is a soundbar"
-	},
-	{
-		"title": "Back Case",
-		"tag": "case",
-		"price": "10",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is back case"
-	},
-	{
-		"title": "iPhone",
-		"tag": "mobile",
-		"price": "990",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is a iPhone"
-	},
-	{
-		"title": "iPhone",
-		"tag": "mobile",
-		"price": "990",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "This is a iPhone"
-	}
+  {
+    "id": "0.123456789",
+    "title": "Wireless Bluetooth Earbuds",
+    "tag": "audio",
+    "description": "Immerse yourself in high-quality sound with these wireless Bluetooth earbuds. Perfect for music lovers and those on the go.",
+    "price": 49.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "brand": "TechSound",
+    "color": "Black",
+    "rating": 4.5
+  },
+  {
+    "id": "0.987654321",
+    "title": "Smartwatch with Fitness Tracker",
+    "tag": "wearables",
+    "description": "Stay connected and monitor your fitness with this feature-packed smartwatch. Track your steps, heart rate, and receive notifications seamlessly.",
+    "price": 89.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "brand": "FitTech",
+    "color": "Silver",
+    "water_resistant": true
+  },
+  {
+    "id": "0.456789012",
+    "title": "Shockproof Phone Case",
+    "tag": "case and protection",
+    "description": "Protect your phone from drops and shocks with this rugged shockproof phone case. Slim design without compromising on durability.",
+    "price": 19.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "compatible_models": ["iPhone 11", "Samsung Galaxy S20"],
+    "material": "TPU",
+    "color": "Red"
+  },
+  {
+    "id": "0.135790246",
+    "title": "High-Speed USB-C Cable",
+    "tag": "power and cables",
+    "description": "Charge your devices quickly with this high-speed USB-C cable. Durable and tangle-free design for convenience.",
+    "price": 14.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "length": "3 feet",
+    "color": "Blue"
+  },
+  {
+    "id": "0.246801357",
+    "title": "Gaming Mouse with RGB Lighting",
+    "tag": "gears",
+    "description": "Elevate your gaming experience with this high-performance gaming mouse. Customizable RGB lighting for a personalized touch.",
+    "price": 39.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "brand": "GameMaster",
+    "dpi": 12000
+  },
+  {
+    "id": "0.678901234",
+    "title": "Portable External Hard Drive",
+    "tag": "storage",
+    "description": "Expand your device's storage with this portable external hard drive. Store photos, videos, and documents with ease.",
+    "price": 79.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "capacity": "1TB",
+    "interface": "USB 3.0"
+  },
+  {
+    "id": "0.543210987",
+    "title": "In-Ear Noise-Canceling Headphones",
+    "tag": "audio",
+    "description": "Immerse yourself in music without distractions with these in-ear noise-canceling headphones. Perfect for travel and daily commutes.",
+    "price": 59.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "brand": "SoundIsolate",
+    "color": "White",
+    "rating": 4.7
+  },
+  {
+    "id": "0.987654321",
+    "title": "Wireless Charging Pad",
+    "tag": "power and cables",
+    "description": "Charge your Qi-enabled devices wirelessly with this sleek charging pad. LED indicator for easy charging status.",
+    "price": 29.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "compatible_devices": ["iPhone 12", "Samsung Galaxy S21"],
+    "color": "Black"
+  },
+  {
+    "id": "0.135790246",
+    "title": "Laptop Cooling Pad",
+    "tag": "gears",
+    "description": "Keep your laptop cool during intense gaming sessions or heavy workloads with this efficient cooling pad. Adjustable fan speed for optimal cooling.",
+    "price": 34.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "compatible_laptops": ["Dell XPS", "HP Spectre"],
+    "color": "Red"
+  },
+  {
+    "id": "0.246801357",
+    "title": "Bluetooth Speaker",
+    "tag": "audio",
+    "description": "Enhance your audio experience with this portable Bluetooth speaker. Rich sound quality in a compact design for on-the-go entertainment.",
+    "price": 39.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "brand": "SonicWave",
+    "color": "Blue",
+    "water_resistant": true
+  },
+  {
+    "id": "0.678901234",
+    "title": "Universal Laptop Charger",
+    "tag": "power and cables",
+    "description": "Power up your laptop with this universal laptop charger. Multiple adapter tips for compatibility with various laptop models.",
+    "price": 49.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "output_voltage": "19V",
+    "color": "Black"
+  },
+  {
+    "id": "0.543210987",
+    "title": "Fitness Tracker Bracelet",
+    "tag": "wearables",
+    "description": "Monitor your fitness goals with this stylish fitness tracker bracelet. Track steps, calories, and sleep patterns for a healthier lifestyle.",
+    "price": 29.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "brand": "FitStyle",
+    "color": "Pink",
+    "water_resistant": true
+  },
+  {
+    "id": "0.123456789",
+    "title": "Car Phone Mount",
+    "tag": "gears",
+    "description": "Keep your phone secure and accessible in the car with this adjustable car phone mount. Easy installation and 360-degree rotation.",
+    "price": 14.99,
+    "availability": "instock",
+    "image": "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "compatible_devices": ["iPhone", "Samsung Galaxy"],
+    "color": "Gray"
+  }
 ]

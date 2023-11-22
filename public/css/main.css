@@ -38,7 +38,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .hero {
@@ -1047,6 +1047,10 @@ textarea {
   position: relative;
   overflow: visible;
   border: 1px solid black;
+  transition: all 0.2s ease-in;
+}
+.card:hover {
+  transform: scale(1.02);
 }
 
 .card-img {

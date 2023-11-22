@@ -23,6 +23,7 @@ export default class Item {
 	}
 
 	save() {
+		this.id = Math.random().toString();
 		getItemsFromFile((items) => {
 			items.push(this);
 			fs.writeFile(pathOfData, JSON.stringify(items), (err) => {
@@ -33,5 +34,12 @@ export default class Item {
 
 	static fetchAll(cb) {
 		getItemsFromFile(cb);
+	}
+
+	static findByID(id, cb) {
+		getItemsFromFile(products => {
+			const product = products.find(p => p.id === id)
+			cb(product)
+		})
 	}
 }

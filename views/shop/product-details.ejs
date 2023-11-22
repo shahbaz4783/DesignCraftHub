@@ -1,0 +1,16 @@
+<%- include('../partials/dochead') %>
+<%- include('../partials/navigation') %>
+<main class="all-products">
+    <section>
+        <aside>
+            <img src="<%= info.image %>" alt="">
+        </aside>
+        <article>
+            <h2><%= info.title %></h2>
+            <p><%= info.description %></p>
+            <h3><%= info.price %></h3>
+        </article>
+    </section>
+</main>
+<%- include('../partials/footer') %>
+<%- include('../partials/docbottom') %>
