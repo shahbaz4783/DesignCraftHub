@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('index.ejs', { pageTitle: 'Home - Health Harbour' });
+    res.render('home/index.ejs', { pageTitle: 'Home - Health Harbour' });
 })
 
 

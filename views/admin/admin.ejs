@@ -4,19 +4,19 @@
     <%- include('../partials/adminNav') %>
     <section id="content">
         <% if (path === '/add-product'){ %>
-        <%- include('../layouts/admin/add-product') %>
+        <%- include('./add-product') %>
         <% } %>
 
         <%  if (path === '/all-product'){ %>
-        <%- include('../layouts/admin/products') %>
+        <%- include('./products') %>
         <% } %>
 
         <%  if (path === '/orders'){ %>
-        <%- include('../layouts/admin/orders') %>
+        <%- include('./orders') %>
         <% } %>
 
         <%  if (path === '/') { %>
-        <%- include('../layouts/admin/dashboard') %>
+        <%- include('./dashboard') %>
         <% } %>
         
     </section>
