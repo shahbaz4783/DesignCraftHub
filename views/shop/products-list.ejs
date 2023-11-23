@@ -3,17 +3,21 @@
 		<% for (item of product) { %>
 		<div class="card">
 			<div class="card-img">
-                <img src="<%= item.image %>" alt="">
-            </div>
+				<img src="<%= item.image %>" alt="" />
+			</div>
 			<a href="/products/<%= item.id %>" class="card-info">
 				<p class="text-title"><%= item.title %></p>
 				<p class="text-body"><%= item.description %></p>
 			</a>
 			<div class="card-footer">
 				<span class="text-title">$ <%= item.price %></span>
-				<div class="card-button">
-					<img src="/assets/cart.svg" alt="">
-				</div>
+
+				<form class="card-button" action="/cart" method="post">
+					<input type="hidden" name="productID" value="<%= item.id %>" />
+					<button type="submit" id="cart">
+						<img src="/assets/cart.svg" alt="" />
+					</button>
+				</form>
 			</div>
 		</div>
 		<% } %>

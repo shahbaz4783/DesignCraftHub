@@ -37,6 +37,12 @@ export const getCart = (req, res) => {
 	})
 }
 
+export const postCart = (req, res) => {
+	const itemId = req.body.productID
+	console.log(itemId);
+	res.redirect('/cart')
+}
+
 export const getCheckout = (req, res) => {
 	res.render('shop/checkout.ejs', {
 		pageTitle: 'Your Orders',

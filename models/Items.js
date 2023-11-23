@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+import uniqid from 'uniqid';
+
 
 const pathOfData = path.join('data', 'products.json');
 
@@ -23,7 +25,7 @@ export default class Item {
 	}
 
 	save() {
-		this.id = Math.random().toString();
+		this.id = uniqid();
 		getItemsFromFile((items) => {
 			items.push(this);
 			fs.writeFile(pathOfData, JSON.stringify(items), (err) => {

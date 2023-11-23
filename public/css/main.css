@@ -1098,17 +1098,24 @@ textarea {
   display: flex;
   gap: 0.5em;
 }
-.product-info .shop-info .info-container .btn-actions a {
+.product-info .shop-info .info-container .btn-actions form {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
-.product-info .shop-info .info-container .btn-actions a:first-child {
+.product-info .shop-info .info-container .btn-actions form input {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.product-info .shop-info .info-container .btn-actions form:first-child {
   background-color: black;
 }
-.product-info .shop-info .info-container .btn-actions a:last-child {
+.product-info .shop-info .info-container .btn-actions form:last-child {
   background-color: blue;
 }
 
@@ -1173,6 +1180,13 @@ svg {
   cursor: pointer;
   border-radius: 50px;
   transition: 0.3s ease-in-out;
+}
+.card-button button {
+  all: unset;
+  padding: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Hover*/
