@@ -1,16 +1,23 @@
-<%- include('../partials/dochead') %>
-<%- include('../partials/navigation') %>
-<main class="all-products">
-    <section>
-        <aside>
-            <img src="<%= info.image %>" alt="">
-        </aside>
-        <article>
-            <h2><%= info.title %></h2>
-            <p><%= info.description %></p>
-            <h3><%= info.price %></h3>
-        </article>
-    </section>
+<%- include('../partials/dochead') %> <%- include('../partials/navigation') %>
+<main class="product-info">
+	<section class="basic-details">
+		<aside>
+			<img src="<%= info.image %>" alt="" />
+		</aside>
+		<article>
+			<h2><%= info.title %></h2>
+			<p><%= info.description %></p>
+			<h3>$ <%= info.price %></h3>
+		</article>
+	</section>
+	<article class="shop-info">
+		<div class="info-container">
+			<div class="price"><h3>$ <%= info.price %></h3></div>
+			<div class="btn-actions">
+				<a href="/cart">Add to cart</a>
+				<a href="/buy">Buy Now</a>
+			</div>
+		</div>
+	</article>
 </main>
-<%- include('../partials/footer') %>
-<%- include('../partials/docbottom') %>
+<%- include('../partials/footer') %> <%- include('../partials/docbottom') %>

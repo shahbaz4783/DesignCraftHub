@@ -1040,6 +1040,78 @@ textarea {
   flex: 10;
 }
 
+.product-info .basic-details {
+  border: 2px solid black;
+  display: flex;
+  gap: 2em;
+  height: 80vh;
+}
+.product-info .basic-details aside {
+  flex: 4;
+  border: 2px solid pink;
+}
+.product-info .basic-details aside img {
+  width: 100%;
+}
+.product-info .basic-details article {
+  flex: 5;
+  border: 2px solid green;
+}
+.product-info .shop-info {
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-info .shop-info .info-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+.product-info .shop-info .info-container .price {
+  flex: 1;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .product-info .shop-info .info-container .price {
+    display: none;
+  }
+}
+.product-info .shop-info .info-container .price h3 {
+  font-size: 2em;
+  margin: 0;
+}
+.product-info .shop-info .info-container .btn-actions {
+  height: 85%;
+  flex: 1;
+  border: 2px solid white;
+  display: flex;
+  gap: 0.5em;
+}
+.product-info .shop-info .info-container .btn-actions a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.product-info .shop-info .info-container .btn-actions a:first-child {
+  background-color: black;
+}
+.product-info .shop-info .info-container .btn-actions a:last-child {
+  background-color: blue;
+}
+
 .card {
   height: fit-content;
   padding: 0.8em;
