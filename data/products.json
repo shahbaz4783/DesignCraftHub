@@ -1,6 +1,6 @@
 [
 	{
-		"id": "0.123456423789",
+		"id": "ftjsn1kwplpboi6jm",
 		"title": "Wireless Bluetooth Earbuds",
 		"tag": "audio",
 		"description": "Immerse yourself in high-quality sound with these wireless Bluetooth earbuds. Perfect for music lovers and those on the go.",
@@ -12,7 +12,7 @@
 		"rating": 4.5
 	},
 	{
-		"id": "0.984327654321",
+		"id": "ftjsn1kyglpbois8r",
 		"title": "Smartwatch with Fitness Tracker",
 		"tag": "wearables",
 		"description": "Stay connected and monitor your fitness with this feature-packed smartwatch. Track your steps, heart rate, and receive notifications seamlessly.",
@@ -24,7 +24,7 @@
 		"water_resistant": true
 	},
 	{
-		"id": "0.454256789012",
+		"id": "ftjsn1l0plpboj7yj",
 		"title": "Shockproof Phone Case",
 		"tag": "case and protection",
 		"description": "Protect your phone from drops and shocks with this rugged shockproof phone case. Slim design without compromising on durability.",
@@ -36,7 +36,7 @@
 		"color": "Red"
 	},
 	{
-		"id": "0.135790252346",
+		"id": "ftjsn1l1tlpbojlb6",
 		"title": "High-Speed USB-C Cable",
 		"tag": "power and cables",
 		"description": "Charge your devices quickly with this high-speed USB-C cable. Durable and tangle-free design for convenience.",
@@ -47,7 +47,7 @@
 		"color": "Blue"
 	},
 	{
-		"id": "0.246801532357",
+		"id": "ftjsn1l33lpbojupf",
 		"title": "Gaming Mouse with RGB Lighting",
 		"tag": "gears",
 		"description": "Elevate your gaming experience with this high-performance gaming mouse. Customizable RGB lighting for a personalized touch.",
@@ -58,7 +58,7 @@
 		"dpi": 12000
 	},
 	{
-		"id": "0.6789012425234",
+		"id": "ftjsn1l4mlpbok2x8",
 		"title": "Portable External Hard Drive",
 		"tag": "storage",
 		"description": "Expand your device's storage with this portable external hard drive. Store photos, videos, and documents with ease.",
@@ -69,7 +69,7 @@
 		"interface": "USB 3.0"
 	},
 	{
-		"id": "0.543210532987",
+		"id": "ftjsn1l6nlpbokej4",
 		"title": "In-Ear Noise-Canceling Headphones",
 		"tag": "audio",
 		"description": "Immerse yourself in music without distractions with these in-ear noise-canceling headphones. Perfect for travel and daily commutes.",
@@ -81,7 +81,7 @@
 		"rating": 4.7
 	},
 	{
-		"id": "0.9876552344321",
+		"id": "ftjsn1l7rlpbokrkt",
 		"title": "Wireless Charging Pad",
 		"tag": "power and cables",
 		"description": "Charge your Qi-enabled devices wirelessly with this sleek charging pad. LED indicator for easy charging status.",
@@ -92,7 +92,7 @@
 		"color": "Black"
 	},
 	{
-		"id": "0.1357904351246",
+		"id": "ftjsn1la9lpbol4ue",
 		"title": "Laptop Cooling Pad",
 		"tag": "gears",
 		"description": "Keep your laptop cool during intense gaming sessions or heavy workloads with this efficient cooling pad. Adjustable fan speed for optimal cooling.",
@@ -103,7 +103,7 @@
 		"color": "Red"
 	},
 	{
-		"id": "0.2445216801357",
+		"id": "ftjsn1lbdlpbolfal",
 		"title": "Bluetooth Speaker",
 		"tag": "audio",
 		"description": "Enhance your audio experience with this portable Bluetooth speaker. Rich sound quality in a compact design for on-the-go entertainment.",
@@ -115,7 +115,7 @@
 		"water_resistant": true
 	},
 	{
-		"id": "0.67431218901234",
+		"id": "ftjsn1lcmlpbolrit",
 		"title": "Universal Laptop Charger",
 		"tag": "power and cables",
 		"description": "Power up your laptop with this universal laptop charger. Multiple adapter tips for compatibility with various laptop models.",
@@ -126,7 +126,7 @@
 		"color": "Black"
 	},
 	{
-		"id": "0.5432114550987",
+		"id": "ftjsn1ldqlpbom4jc",
 		"title": "Fitness Tracker Bracelet",
 		"tag": "wearables",
 		"description": "Monitor your fitness goals with this stylish fitness tracker bracelet. Track steps, calories, and sleep patterns for a healthier lifestyle.",
@@ -136,13 +136,5 @@
 		"brand": "FitStyle",
 		"color": "Pink",
 		"water_resistant": true
-	},
-	{
-		"title": "ID",
-		"tag": "hello",
-		"price": "324",
-		"image": "https://images.unsplash.com/photo-1625887725172-889496394121?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"description": "should give a unique id",
-		"id": "ftjsn17tblpaxe98o"
 	}
 ]
