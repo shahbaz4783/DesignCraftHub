@@ -10,7 +10,7 @@ export default class Cart {
 			if (!err) {
 				cart = JSON.parse(content);
 			}
-			const existingItemIndex = cart.items.findIndex((item) => (item.id = id));
+			const existingItemIndex = cart.items.findIndex((item) => (item.id === id));
 			const existingItem = cart.items[existingItemIndex];
 			let updatedItem;
 
