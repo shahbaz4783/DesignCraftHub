@@ -27,4 +27,15 @@ export default class Cart {
 			fs.writeFile(pathOfCart, JSON.stringify(cart), (err) => console.log(err));
 		});
 	}
+
+	static getCartContent(cb) {
+		fs.readFile(pathOfCart, (err, content) => {
+			if (err) {
+				cb([]);
+			} else {
+				const cart = JSON.parse(content);
+				cb(cart.items || []);
+			}
+		});
+	}
 }
