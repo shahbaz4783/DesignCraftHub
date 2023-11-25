@@ -8,20 +8,16 @@ header {
 	transition: background-color 0.4s ease;
 	background-color: transparent;
 	margin-right: 20px;
-    background-color: #e5f4fd;
-
-
-	&.background {
-		background-color: #3498DB;
-	}
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 	#logo {
-        width: 10%;
+		width: 10%;
 
-        img {
-            width: 100%;
-        }
-    }
+		img {
+			width: 100%;
+		}
+	}
 
 	&:last-child {
 		display: flex;
@@ -62,78 +58,55 @@ header {
 	}
 }
 
-nav ul {
-	display: flex;
+nav {
+	flex: 4;
 
-	li {
-		list-style: none;
+	ul {
 		display: flex;
-		justify-content: space-evenly;
 
-		a {
-			text-decoration: none;
-			margin: 20px;
-            color: #3498DB !important;
+		li {
+			list-style: none;
+			display: flex;
+			justify-content: space-evenly;
+
+			a {
+				text-decoration: none;
+				margin: 20px;
+			}
 		}
 	}
 }
 
 // search
 
-
-::placeholder {
-	color: whitesmoke;
-	font-size: 0.8rem;
-}
-
-#search-input:focus,
-#search-input:hover {
-	outline: none;
-	border-color: rgba(234, 76, 137, 0.4);
-	background-color: #fff;
-	box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-}
-
-.container {
-	position: relative;
+.user-actions {
+	flex: 4;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	width: 40%;
+	list-style: none;
 
-	.search-form {
-		border: 1.5px solid #3498DB;
+	.search {
+		flex: 5;
+		background-color: rgb(221, 216, 216);
+		height: 40px;
+		padding: 1.15em 1.1em;
+		border: 2px solid white;
+		border-radius: 0.4em;
+		font-size: 1.1em;
+
+		&:focus {
+			color: black;
+			outline-color: #acbdd5;
+			transition: 0.1s;
+			transition-property: box-shadow;
+		}
+	}
+
+	div {
+		flex: 1;
 		display: flex;
-		align-items: center;
-		width: 100%;
-		border-radius: 1.5em;
-		overflow: hidden;
-
-		input {
-			padding: 0.8em;
-			width: 100%;
-			background-color: #3498DB;
-			border: none;
-			color: white;
-
-			&:focus::placeholder {
-				opacity: 0;
-				color: transparent;
-			}
-		}
-
-		.icon {
-			position: absolute;
-			height: 100%;
-			top: 0;
-			left: 0;
-			pointer-events: none;
-			display: flex;
-			align-items: center;
-
-			img {
-				display: block;
-				margin: auto;
-			}
-		}
+		gap: 1em;
+		justify-content: space-evenly;
 	}
 }

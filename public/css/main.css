@@ -213,10 +213,7 @@ header {
   transition: background-color 0.4s ease;
   background-color: transparent;
   margin-right: 20px;
-  background-color: #e5f4fd;
-}
-header.background {
-  background-color: #3498DB;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 header #logo {
   width: 10%;
@@ -256,6 +253,9 @@ header:last-child {
   }
 }
 
+nav {
+  flex: 4;
+}
 nav ul {
   display: flex;
 }
@@ -267,59 +267,35 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   margin: 20px;
-  color: #3498DB !important;
 }
 
-::placeholder {
-  color: whitesmoke;
-  font-size: 0.8rem;
-}
-
-#search-input:focus,
-#search-input:hover {
-  outline: none;
-  border-color: rgba(234, 76, 137, 0.4);
-  background-color: #fff;
-  box-shadow: 0 0 0 4px rgba(234, 76, 137, 0.1);
-}
-
-.container {
-  position: relative;
+.user-actions {
+  flex: 4;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 40%;
+  list-style: none;
 }
-.container .search-form {
-  border: 1.5px solid #3498DB;
+.user-actions .search {
+  flex: 5;
+  background-color: rgb(221, 216, 216);
+  height: 40px;
+  padding: 1.15em 1.1em;
+  border: 2px solid white;
+  border-radius: 0.4em;
+  font-size: 1.1em;
+}
+.user-actions .search:focus {
+  color: black;
+  outline-color: #acbdd5;
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+.user-actions div {
+  flex: 1;
   display: flex;
-  align-items: center;
-  width: 100%;
-  border-radius: 1.5em;
-  overflow: hidden;
-}
-.container .search-form input {
-  padding: 0.8em;
-  width: 100%;
-  background-color: #3498DB;
-  border: none;
-  color: white;
-}
-.container .search-form input:focus::placeholder {
-  opacity: 0;
-  color: transparent;
-}
-.container .search-form .icon {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-}
-.container .search-form .icon img {
-  display: block;
-  margin: auto;
+  gap: 1em;
+  justify-content: space-evenly;
 }
 
 footer {
