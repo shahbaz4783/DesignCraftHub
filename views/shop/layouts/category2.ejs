@@ -5,13 +5,13 @@
 	<div class="container">
 		<% let displayedItems = 0; for (item of product) { if (displayedItems >= 2){ break; } %> 
 		<% if (item.tag === 'wearables') { displayedItems++; %>
-		<div class="sale-box">
+		<a href="/products/<%= item.id %>" class="sale-box">
 			<img src="<%= item.image %>" alt="" />
 			<div>
 				<h3><%= item.title %></h3>
 				<p>$ <%= item.price %></p>
 			</div>
-		</div>
+		</a>
 		<% } } %>
 	</div>
 </section>
