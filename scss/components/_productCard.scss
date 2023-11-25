@@ -6,6 +6,8 @@
 	overflow: visible;
     border: 1px solid black;
 	transition: all 0.2s ease-in;
+background: linear-gradient(0deg, rgba(229,252,252,1) 0%, rgba(238,235,235,1) 39%);
+
 
 	&:hover {
 		transform: scale(1.02);
@@ -20,6 +22,8 @@
 
 	img {
 		width: 100%;
+		mix-blend-mode: darken;
+		aspect-ratio: 7/5;
 	}
 }
 
@@ -75,5 +79,4 @@ svg {
 .card-button:hover {
 	border: 1px solid #d3d3ee;
 	background-color: #d3d3ee;
-    
 }

@@ -1006,6 +1006,36 @@ textarea {
   font-weight: lighter;
 }
 
+.shop-category {
+  display: flex;
+  flex-direction: column;
+}
+.shop-category .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-category .heading p {
+  cursor: pointer;
+}
+.shop-category .container {
+  display: flex;
+  gap: 2em;
+  border: 2px solid green;
+  width: 100%;
+}
+.shop-category .container a {
+  flex: 1;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgb(232, 242, 239) 2%, rgb(255, 255, 255) 27%);
+}
+.shop-category .container a img {
+  width: 100%;
+  aspect-ratio: 7/5;
+  mix-blend-mode: multiply;
+}
+
 .homepage {
   display: flex;
   flex-direction: column;
@@ -1127,6 +1157,7 @@ textarea {
   overflow: visible;
   border: 1px solid black;
   transition: all 0.2s ease-in;
+  background: linear-gradient(0deg, rgb(229, 252, 252) 0%, rgb(238, 235, 235) 39%);
 }
 .card:hover {
   transform: scale(1.02);
@@ -1140,6 +1171,8 @@ textarea {
 }
 .card-img img {
   width: 100%;
+  mix-blend-mode: darken;
+  aspect-ratio: 7/5;
 }
 
 .card-info {
