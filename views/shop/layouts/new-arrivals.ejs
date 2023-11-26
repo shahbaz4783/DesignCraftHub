@@ -1,0 +1,22 @@
+<section class="shop-category">
+    <div class="heading">
+        <h2>New Arrivals</h2>
+    </div>
+    <div class="container">
+        <% let displayedItems = 0; %>
+        <% for (let i = product.length - 1; i >= 0; i--) { %>
+            <% const item = product[i]; %>
+            <% if (displayedItems >= 4) { break; } %>
+            <%  { displayedItems++; %>
+                <a href="/products/<%= item.id %>" class="sale-box">
+                    <img src="<%= item.image %>" alt="" />
+                    <div>
+                        <h3><%= item.title %></h3>
+                        <p>$ <%= item.price %></p>
+                    </div>
+                </a>
+            <% } %>
+        <% } %>
+    </div>
+</section>
+

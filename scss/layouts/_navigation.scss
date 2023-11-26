@@ -80,31 +80,32 @@ nav {
 // search
 
 .user-actions {
-	flex: 4;
+	flex: 3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
+	gap: 1em;
 
 	.search {
-		flex: 5;
-		background-color: rgb(221, 216, 216);
+
+		background-color: #f6f6f6;
 		height: 40px;
 		padding: 1.15em 1.1em;
-		border: 2px solid white;
-		border-radius: 0.4em;
-		font-size: 1.1em;
+		border: 1px solid lightgray;
+		border-radius: 1.2em;
+		font-size: 1em;
 
 		&:focus {
 			color: black;
-			outline-color: #acbdd5;
+			outline-color: lightgray;
 			transition: 0.1s;
 			transition-property: box-shadow;
 		}
 	}
 
 	div {
-		flex: 1;
+
 		display: flex;
 		gap: 1em;
 		justify-content: space-evenly;
