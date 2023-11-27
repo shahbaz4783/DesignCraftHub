@@ -14,12 +14,11 @@
 	.container {
 		display: flex;
 		gap: 2em;
-		border: 2px solid green;
 		width: 100%;
 
 		a {
 			flex: 1;
-			border: 2px solid blue;
+            padding: 0.6em;
             border-radius: 0.4em;
 			display: flex;
 			flex-direction: column;

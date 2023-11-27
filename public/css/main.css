@@ -995,12 +995,11 @@ textarea {
 .shop-category .container {
   display: flex;
   gap: 2em;
-  border: 2px solid green;
   width: 100%;
 }
 .shop-category .container a {
   flex: 1;
-  border: 2px solid blue;
+  padding: 0.6em;
   border-radius: 0.4em;
   display: flex;
   flex-direction: column;
@@ -1123,6 +1122,12 @@ textarea {
 }
 .product-info .shop-info .info-container .btn-actions form:last-child {
   background-color: blue;
+}
+
+.store-page {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
 }
 
 .card {
