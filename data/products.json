@@ -30,7 +30,7 @@
 		"description": "Protect your phone from drops and shocks with this rugged shockproof phone case. Slim design without compromising on durability.",
 		"price": 19.99,
 		"availability": "instock",
-		"image": "https://aprozone.in/cdn/shop/products/Untitleddesign-2022-03-19T124854.427_1800x1800.jpg?v=1663677171",
+		"image": "https://www.totemgoods.com/cdn/shop/files/Resize_0006_SILICONEWITHMAGSAFESKY-14_f162ad0c-a73e-4f59-9b03-a061b3903170.jpg?v=1691735223",
 		"compatible_models": ["iPhone 11", "Samsung Galaxy S20"],
 		"material": "TPU",
 		"color": "Red"
@@ -136,5 +136,13 @@
 		"brand": "FitStyle",
 		"color": "Pink",
 		"water_resistant": true
+	},
+	{
+		"title": "Type C to C Cable",
+		"tag": "power and cable",
+		"price": "13",
+		"image": "https://m.media-amazon.com/images/I/61g9F6LXKqL._SL1500_.jpg",
+		"description": "This is a fast type c to c data cable.",
+		"id": "ftjsnp8lpfg7kdr"
 	}
 ]

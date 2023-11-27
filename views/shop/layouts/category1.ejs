@@ -4,7 +4,7 @@
 		<p>View All</p>
 	</div>
 	<div class="container">
-		<% let displayedItems = 0; for (item of product) { if (displayedItems >= 3){ break; } %> 
+		<% let displayedItems = 0; for (item of product) { if (displayedItems >= 4){ break; } %> 
 		<% if (item.tag === 'audio') { displayedItems++; %>
 		<a href="/products/<%= item.id %>" class="sale-box">
 			<img src="<%= item.image %>" alt="" />

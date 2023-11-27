@@ -3,7 +3,7 @@
 		<h2>Power and cable</h2>
 	</div>
 	<div class="container">
-		<% let displayedItems = 0; for (item of product) { if (displayedItems >= 3){ break; } %> 
+		<% let displayedItems = 0; for (item of product) { if (displayedItems >= 4){ break; } %> 
 		<% if (item.tag === 'power and cables') { displayedItems++; %>
 		<a href="/products/<%= item.id %>" class="sale-box">
 			<img src="<%= item.image %>" alt="" />

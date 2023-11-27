@@ -1,0 +1,29 @@
+<article class="swiper mySwiper">
+	<div class="swiper-wrapper">
+		<% let displayedItems = 0; for (item of product) { if (displayedItems >= 6){
+		break; } %> <% { displayedItems++; %>
+		<div class="swiper-slide" class="sale-box">
+			<div class="swiper-container">
+        <div class="swiper-texts">
+          <div>
+            <h2><%= item.title %></h2>
+            <h3>$ <%= item.price %></h3>
+            <p><%= item.description %></p>
+            <a class="button" href="/products/<%= item.id %>">Buy Now</a>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="<%= item.image %>" alt="" />
+        </div>
+      </div>
+		</div>
+		<% } } %>
+	</div>
+	<div class="swiper-pagination"></div>
+	<div class="autoplay-progress">
+		<svg viewBox="0 0 48 48">
+			<circle cx="24" cy="24" r="20"></circle>
+		</svg>
+		<span></span>
+	</div>
+</article>
