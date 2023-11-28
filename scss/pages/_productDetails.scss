@@ -1,22 +1,39 @@
 .product-info {
 	.basic-details {
-		border: 2px solid black;
 		display: flex;
-		gap: 2em;
 		height: 80vh;
 
 		aside {
 			flex: 4;
-			border: 2px solid pink;
 
 			img {
 				width: 100%;
+                object-fit: cover;
+                mix-blend-mode: multiply;
 			}
 		}
 
 		article {
 			flex: 5;
-			border: 2px solid green;
+
+            .product-specs-container {
+                width: 90%;
+                margin: auto;
+                margin-top: 2.5em;
+
+                h2 {
+                    font-size: 2.8em;
+                    margin-bottom: 0.2em;
+                }
+                p {
+                    font-size: 1.2em;
+                    color: var(--color3);
+                }
+                h3 {
+                    font-size: 2em;
+                }
+            }
+
 		}
 	}
 

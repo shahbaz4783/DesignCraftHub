@@ -1046,21 +1046,35 @@ textarea {
 }
 
 .product-info .basic-details {
-  border: 2px solid black;
   display: flex;
-  gap: 2em;
   height: 80vh;
 }
 .product-info .basic-details aside {
   flex: 4;
-  border: 2px solid pink;
 }
 .product-info .basic-details aside img {
   width: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
 }
 .product-info .basic-details article {
   flex: 5;
-  border: 2px solid green;
+}
+.product-info .basic-details article .product-specs-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 2.5em;
+}
+.product-info .basic-details article .product-specs-container h2 {
+  font-size: 2.8em;
+  margin-bottom: 0.2em;
+}
+.product-info .basic-details article .product-specs-container p {
+  font-size: 1.2em;
+  color: var(--color3);
+}
+.product-info .basic-details article .product-specs-container h3 {
+  font-size: 2em;
 }
 .product-info .shop-info {
   width: 100vw;
@@ -1295,6 +1309,7 @@ svg {
   --theme: #fafafa;
   --color1: #c7eeff;
   --color2: #1d242c;
+  --color3: #9f9f9f;
   --btn-color: #0176c3;
 }
 
