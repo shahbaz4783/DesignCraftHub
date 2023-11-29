@@ -7,6 +7,7 @@ import {
     getOrders,
     getEditProduct,
     editProduct,
+    deleteProduct,
 } from '../controllers/admin.js';
 
 const router = express.Router();
@@ -18,6 +19,8 @@ router.post('/add-product', postProduct);
 router.get('/edit-product/:productID', getEditProduct);
 
 router.post('/edit-product', editProduct);
+
+router.post('/delete-product', deleteProduct);
 
 router.get('/all-products', getProducts);
 

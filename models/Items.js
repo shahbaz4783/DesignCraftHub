@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import uniqid from 'uniqid';
+import Cart from './Cart.js';
 
 
 const pathOfData = path.join('data', 'products.json');
@@ -43,6 +44,18 @@ export default class Item {
 					console.log(err);
 				});
 			}
+		});
+	}
+
+	static deleteByID(id) {
+		getItemsFromFile((products) => {
+			const item = products.find(p => p.id === id)
+			const updatedItems = products.filter((p) => p.id !== id);
+			fs.writeFile(pathOfData, JSON.stringify(updatedItems), (err) => {
+				if (!err) {
+					Cart.deleteItem(id, item.price)
+				}
+			});
 		});
 	}
 

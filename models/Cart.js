@@ -10,7 +10,7 @@ export default class Cart {
 			if (!err) {
 				cart = JSON.parse(content);
 			}
-			const existingItemIndex = cart.items.findIndex((item) => (item.id === id));
+			const existingItemIndex = cart.items.findIndex((item) => item.id === id);
 			const existingItem = cart.items[existingItemIndex];
 			let updatedItem;
 
@@ -36,6 +36,24 @@ export default class Cart {
 				const cart = JSON.parse(content);
 				cb(cart.items || []);
 			}
+		});
+	}
+
+	static deleteItem(id, itemPrice) {
+		fs.readFile(pathOfCart, (err, content) => {
+			if (err) {
+				return;
+			}
+			const updatedCart = { ...JSON.parse(content) };
+			const item = updatedCart.items.find((p) => p.id === id);
+			const itemQty = item.qty;
+
+			updatedCart.items = updatedCart.items.filter((p) => p.id !== id);
+			updatedCart.totalPrice = updatedCart.totalPrice - itemPrice * itemQty;
+
+			fs.writeFile(pathOfCart, JSON.stringify(updatedCart), (err) =>
+				console.log(err)
+			);
 		});
 	}
 }
