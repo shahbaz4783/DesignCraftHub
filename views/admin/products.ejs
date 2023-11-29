@@ -1,24 +1,22 @@
 <section class="admin-products">
-			<% for (item of product) { %>
-			<article class="card">
-				<div class="imgDiv">
-					<img
-						src="<%= item.image %>"
-						alt=""
-					/>
-				</div>
-				<div class="textBox">
-					<div class="textContent">
-						<p class="h1"><%= item.title %></p>
-						<span class="span">$<%= item.price %></span>
-					</div>
-					<p class="p"><%= item.description %></p>
-					<div>
-                            <a href="/delete"><img src="/assets/delete.svg" alt=""></a>
-                            <a href="/edit"><img src="/assets/edit.svg" alt=""></a>
-                    </div>
-				</div>
-			</article>
-			<% } %>
+	<% for (item of product) { %>
+	<article class="card">
+		<div class="imgDiv">
+			<img src="<%= item.image %>" alt="" />
+		</div>
+		<div class="textBox">
+			<div class="textContent">
+				<p class="h1"><%= item.title %></p>
+				<span class="span">$<%= item.price %></span>
+			</div>
+			<p class="p"><%= item.description %></p>
+			<div>
+				<a href="/delete"><img src="/assets/delete.svg" alt="" /></a>
+				<a href="/admin/edit-product/<%= item.id %>?edit=true"
+					><img src="/assets/edit.svg" alt=""
+				/></a>
+			</div>
+		</div>
+	</article>
+	<% } %>
 </section>
-

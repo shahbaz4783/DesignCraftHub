@@ -1,28 +1,80 @@
-<form class="form" action="/admin/add-product" method="post">
-    <p class="title">Add a new Product</p>
-        <div class="flex">
-        <label>
-            <input class="input" name="title" type="text" placeholder="" required="">
-            <span>Title</span>
-        </label>
+<form
+	class="form"
+	action="/admin/<%= editing ? 'edit-product' : 'add-product' %>"
+	method="post"
+>
+	<p class="title"><%= editing ? 'Edit the Product' : 'Add a new Product' %></p>
+	<div class="flex">
+		<label>
+			<input
+				class="input"
+				name="title"
+				type="text"
+				placeholder=""
+				required=""
+				value="<%= editing ? item.title : '' %>"
+			/>
+			<span>Title</span>
+		</label>
 
-        <label>
-            <input class="input" name="tag" type="text" placeholder="" required="">
-            <span>Tag</span>
-        </label>
-       </div>  
-        
-    <label>
-        <input class="input" name="price" type="number" placeholder="" required="">
-        <span>Price</span>
-    </label>
-    <label>
-        <input class="input" name="image" type="text" placeholder="" required="">
-        <span>Image</span>
-    </label>
-    <label>
-        <textarea id="" name="description" cols="30" rows="10" class="input" placeholder="" required=""></textarea>
-        <span>Description</span>
-    </label>
-    <button class="submit">Submit</button>
+		<label>
+			<input
+				class="input"
+				name="tag"
+				type="text"
+				placeholder=""
+				required=""
+				value="<%= editing ? item.tag : '' %>"
+			/>
+			<span>Tag</span>
+		</label>
+	</div>
+
+	<label>
+		<input
+			class="input"
+			name="price"
+			type="number"
+			step=".01"
+			placeholder=""
+			required=""
+			value="<%= editing ? item.price : '' %>"
+		/>
+		<span>Price</span>
+	</label>
+	<label>
+		<input
+			class="input"
+			name="image"
+			type="text"
+			placeholder=""
+			required=""
+			value="<%= editing ? item.image : '' %>"
+		/>
+		<span>Image</span>
+	</label>
+	<label>
+		<textarea
+			id=""
+			name="description"
+			cols="30"
+			rows="10"
+			class="input"
+			placeholder=""
+			required=""
+		>
+<%= editing ? item.description : '' %>
+        </textarea
+		>
+		<span>Description</span>
+	</label>
+	
+   <% if (editing) { %>
+    <input class="input" name="itemID" type="hidden" value="<%= item.id %>" />
+<% } %>
+
+	
+    <button class="submit">
+		<%= editing ? 'Edit Product' : 'Add Product' %>
+	</button>
 </form>

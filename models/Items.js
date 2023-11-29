@@ -16,7 +16,8 @@ const getItemsFromFile = (cb) => {
 };
 
 export default class Item {
-	constructor(title, tag, price, image, description) {
+	constructor(id, title, tag, price, image, description) {
+		this.id = id;
 		this.title = title;
 		this.tag = tag;
 		this.price = price;
@@ -25,12 +26,23 @@ export default class Item {
 	}
 
 	save() {
-		this.id = uniqid();
 		getItemsFromFile((items) => {
-			items.push(this);
-			fs.writeFile(pathOfData, JSON.stringify(items), (err) => {
-				console.log(err);
-			});
+			if (this.id) {
+				const existingItemIndex = items.findIndex(
+					(item) => item.id === this.id
+				);
+				const updatedItems = [...items];
+				updatedItems[existingItemIndex] = this;
+				fs.writeFile(pathOfData, JSON.stringify(updatedItems), (err) => {
+					console.log(err);
+				});
+			} else {
+				this.id = uniqid();
+				items.push(this);
+				fs.writeFile(pathOfData, JSON.stringify(items), (err) => {
+					console.log(err);
+				});
+			}
 		});
 	}
 
@@ -39,9 +51,9 @@ export default class Item {
 	}
 
 	static findByID(id, cb) {
-		getItemsFromFile(products => {
-			const product = products.find(p => p.id === id)
-			cb(product)
-		})
+		getItemsFromFile((products) => {
+			const product = products.find((p) => p.id === id);
+			cb(product);
+		});
 	}
 }

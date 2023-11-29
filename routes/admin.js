@@ -5,6 +5,8 @@ import {
 	getProducts,
     getAdminProfile,
     getOrders,
+    getEditProduct,
+    editProduct,
 } from '../controllers/admin.js';
 
 const router = express.Router();
@@ -12,6 +14,10 @@ const router = express.Router();
 router.get('/add-product', getAddProduct);
 
 router.post('/add-product', postProduct);
+
+router.get('/edit-product/:productID', getEditProduct);
+
+router.post('/edit-product', editProduct);
 
 router.get('/all-products', getProducts);
 
