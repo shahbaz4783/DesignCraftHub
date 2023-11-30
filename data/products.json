@@ -1,1 +1,145 @@
-[{"id":"ftjsn1kwplpboi6jm","title":"Wireless Bluetooth Earbuds","tag":"audio","description":"Immerse yourself in high-quality sound with these wireless Bluetooth earbuds. Perfect for music lovers and those on the go.","price":49.99,"availability":"instock","image":"https://www.gonoise.com/cdn/shop/files/1_64170ada-4cbc-46e1-83fd-454464d3a2d0.png?v=1690349629","brand":"TechSound","color":"Black","rating":4.5},{"id":"ftjsn1kyglpbois8r","title":"Smartwatch with Fitness Tracker","tag":"wearables","description":"Stay connected and monitor your fitness with this feature-packed smartwatch. Track your steps, heart rate, and receive notifications seamlessly.","price":89.99,"availability":"instock","image":"https://www.gonoise.com/cdn/shop/files/NoiseColorFitUltra3-TealBlue_1.png?v=1695122152","brand":"FitTech","color":"Silver","water_resistant":true},{"id":"ftjsn1l0plpboj7yj","title":"Shockproof Phone Case","tag":"case and protection","description":"Protect your phone from drops and shocks with this rugged shockproof phone case. Slim design without compromising on durability.","price":19.99,"availability":"instock","image":"https://www.totemgoods.com/cdn/shop/files/Resize_0006_SILICONEWITHMAGSAFESKY-14_f162ad0c-a73e-4f59-9b03-a061b3903170.jpg?v=1691735223","compatible_models":["iPhone 11","Samsung Galaxy S20"],"material":"TPU","color":"Red"},{"id":"ftjsn1l1tlpbojlb6","title":"High-Speed USB-C Cable","tag":"power and cables","description":"Charge your devices quickly with this high-speed USB-C cable. Durable and tangle-free design for convenience.","price":14.99,"availability":"instock","image":"https://m.media-amazon.com/images/I/71cUfoKoN+L._SL1500_.jpg","length":"3 feet","color":"Blue"},{"id":"ftjsn1l33lpbojupf","title":"Gaming Mouse with RGB Lighting","tag":"gears","description":"Elevate your gaming experience with this high-performance gaming mouse. Customizable RGB lighting for a personalized touch.","price":39.99,"availability":"instock","image":"https://elitehubs.com/cdn/shop/products/razer-basilisk-v3-image-main-600x600-1-2.jpg?v=1683973180","brand":"GameMaster","dpi":12000},{"id":"ftjsn1l4mlpbok2x8","title":"Portable External Hard Drive","tag":"storage","description":"Expand your device's storage with this portable external hard drive. Store photos, videos, and documents with ease.","price":79.99,"availability":"instock","image":"https://m.media-amazon.com/images/I/81u47A2BChL._SL1500_.jpg","capacity":"1TB","interface":"USB 3.0"},{"id":"ftjsn1l6nlpbokej4","title":"In-Ear Noise-Canceling Headphones","tag":"audio","description":"Immerse yourself in music without distractions with these in-ear noise-canceling headphones. Perfect for travel and daily commutes.","price":59.99,"availability":"instock","image":"https://d2xamzlzrdbdbn.cloudfront.net/products/7d658663-7839-4e1c-99de-6624a5aa803123220524_182x182.jpg","brand":"SoundIsolate","color":"White","rating":4.7},{"id":"ftjsn1l7rlpbokrkt","title":"Wireless Charging Pad","tag":"power and cables","description":"Charge your Qi-enabled devices wirelessly with this sleek charging pad. LED indicator for easy charging status.","price":29.99,"availability":"instock","image":"https://m.media-amazon.com/images/I/51nQN5cx5EL._SL1500_.jpg","compatible_devices":["iPhone 12","Samsung Galaxy S21"],"color":"Black"},{"id":"ftjsn1la9lpbol4ue","title":"Laptop Cooling Pad","tag":"gears","price":"34.99","image":"https://m.media-amazon.com/images/I/61vcsgpw6QL._SL1500_.jpg","description":"Keep your laptop cool during intense gaming sessions or heavy workloads with this efficient cooling pad. Adjustable fan speed for optimal cooling.\r\n        \r\n        "},{"id":"ftjsn1lbdlpbolfal","title":"Bluetooth Speaker","tag":"audio","description":"Enhance your audio experience with this portable Bluetooth speaker. Rich sound quality in a compact design for on-the-go entertainment.","price":39.99,"availability":"instock","image":"https://m.media-amazon.com/images/I/51SFh0i5HHL._SL1500_.jpg","brand":"SonicWave","color":"Blue","water_resistant":true},{"id":"ftjsn1lcmlpbolrit","title":"Universal Laptop Charger","tag":"power and cables","description":"Power up your laptop with this universal laptop charger. Multiple adapter tips for compatibility with various laptop models.","price":49.99,"availability":"instock","image":"https://m.media-amazon.com/images/I/71ZOXYbsLiL._SL1500_.jpg","output_voltage":"19V","color":"Black"},{"id":"ftjsn1ldqlpbom4jc","title":"Fitness Tracker Bracelet","tag":"wearables","description":"Monitor your fitness goals with this stylish fitness tracker bracelet. Track steps, calories, and sleep patterns for a healthier lifestyle.","price":29.99,"availability":"instock","image":"https://m.media-amazon.com/images/I/71wPLzgLNYL._SL1500_.jpg","brand":"FitStyle","color":"Pink","water_resistant":true},{"title":"Type C to C Cable","tag":"power and cable","price":"13","image":"https://m.media-amazon.com/images/I/61g9F6LXKqL._SL1500_.jpg","description":"This is a fast type c to c data cable.","id":"ftjsnp8lpfg7kdr"},{"title":"boAt Smartring Gen-1 with Premium Ceramic & Metal Build","tag":"wearables","price":"149.98","image":"https://m.media-amazon.com/images/I/619fo4YszjL._SL1500_.jpg","description":"Seamlessly control your music playback, snap pictures, and effortlessly navigate through social media apps like Instagram and Facebook.","id":"ftjsn8kxlpgwon9q"},{"id":"ftjsnmi7lpjom98b","title":"hy","tag":"hh","price":"78","image":"57","description":"falseh\r\n        "},{"id":"ftjsnmoslpjon5me","title":"false","tag":"false","price":"5677","image":"false","description":"false\r\n        "}]
+[
+	{
+		"id": "ftjsn1kwplpboi6jm",
+		"title": "Wireless Bluetooth Earbuds",
+		"tag": "audio",
+		"description": "Immerse yourself in high-quality sound with these wireless Bluetooth earbuds. Perfect for music lovers and those on the go.",
+		"price": 49.99,
+		"availability": "instock",
+		"image": "https://www.gonoise.com/cdn/shop/files/1_64170ada-4cbc-46e1-83fd-454464d3a2d0.png?v=1690349629",
+		"brand": "TechSound",
+		"color": "Black",
+		"rating": 4.5
+	},
+	{
+		"id": "ftjsn1kyglpbois8r",
+		"title": "Smartwatch with Fitness Tracker",
+		"tag": "wearables",
+		"description": "Stay connected and monitor your fitness with this feature-packed smartwatch. Track your steps, heart rate, and receive notifications seamlessly.",
+		"price": 89.99,
+		"availability": "instock",
+		"image": "https://www.gonoise.com/cdn/shop/files/NoiseColorFitUltra3-TealBlue_1.png?v=1695122152",
+		"brand": "FitTech",
+		"color": "Silver",
+		"water_resistant": true
+	},
+	{
+		"id": "ftjsn1l0plpboj7yj",
+		"title": "Shockproof Phone Case",
+		"tag": "case and protection",
+		"description": "Protect your phone from drops and shocks with this rugged shockproof phone case. Slim design without compromising on durability.",
+		"price": 19.99,
+		"availability": "instock",
+		"image": "https://www.totemgoods.com/cdn/shop/files/Resize_0006_SILICONEWITHMAGSAFESKY-14_f162ad0c-a73e-4f59-9b03-a061b3903170.jpg?v=1691735223",
+		"compatible_models": ["iPhone 11", "Samsung Galaxy S20"],
+		"material": "TPU",
+		"color": "Red"
+	},
+	{
+		"id": "ftjsn1l1tlpbojlb6",
+		"title": "High-Speed USB-C Cable",
+		"tag": "power and cables",
+		"description": "Charge your devices quickly with this high-speed USB-C cable. Durable and tangle-free design for convenience.",
+		"price": 14.99,
+		"availability": "instock",
+		"image": "https://m.media-amazon.com/images/I/71cUfoKoN+L._SL1500_.jpg",
+		"length": "3 feet",
+		"color": "Blue"
+	},
+	{
+		"id": "ftjsn1l33lpbojupf",
+		"title": "Gaming Mouse with RGB Lighting",
+		"tag": "gears",
+		"description": "Elevate your gaming experience with this high-performance gaming mouse. Customizable RGB lighting for a personalized touch.",
+		"price": 39.99,
+		"availability": "instock",
+		"image": "https://elitehubs.com/cdn/shop/products/razer-basilisk-v3-image-main-600x600-1-2.jpg?v=1683973180",
+		"brand": "GameMaster",
+		"dpi": 12000
+	},
+	{
+		"id": "ftjsn1l4mlpbok2x8",
+		"title": "Portable External Hard Drive",
+		"tag": "storage",
+		"description": "Expand your device's storage with this portable external hard drive. Store photos, videos, and documents with ease.",
+		"price": 79.99,
+		"availability": "instock",
+		"image": "https://m.media-amazon.com/images/I/81u47A2BChL._SL1500_.jpg",
+		"capacity": "1TB",
+		"interface": "USB 3.0"
+	},
+	{
+		"id": "ftjsn1l6nlpbokej4",
+		"title": "In-Ear Noise-Canceling Headphones",
+		"tag": "audio",
+		"description": "Immerse yourself in music without distractions with these in-ear noise-canceling headphones. Perfect for travel and daily commutes.",
+		"price": 59.99,
+		"availability": "instock",
+		"image": "https://d2xamzlzrdbdbn.cloudfront.net/products/7d658663-7839-4e1c-99de-6624a5aa803123220524_182x182.jpg",
+		"brand": "SoundIsolate",
+		"color": "White",
+		"rating": 4.7
+	},
+	{
+		"id": "ftjsn1l7rlpbokrkt",
+		"title": "Wireless Charging Pad",
+		"tag": "power and cables",
+		"description": "Charge your Qi-enabled devices wirelessly with this sleek charging pad. LED indicator for easy charging status.",
+		"price": 29.99,
+		"availability": "instock",
+		"image": "https://m.media-amazon.com/images/I/51nQN5cx5EL._SL1500_.jpg",
+		"compatible_devices": ["iPhone 12", "Samsung Galaxy S21"],
+		"color": "Black"
+	},
+	{
+		"id": "ftjsn1la9lpbol4ue",
+		"title": "Laptop Cooling Pad",
+		"tag": "gears",
+		"price": "34.99",
+		"image": "https://m.media-amazon.com/images/I/61vcsgpw6QL._SL1500_.jpg",
+		"description": "Keep your laptop cool during intense gaming sessions or heavy workloads with this efficient cooling pad. Adjustable fan speed for optimal cooling.\r\n        \r\n        "
+	},
+	{
+		"id": "ftjsn1lbdlpbolfal",
+		"title": "Bluetooth Speaker",
+		"tag": "audio",
+		"description": "Enhance your audio experience with this portable Bluetooth speaker. Rich sound quality in a compact design for on-the-go entertainment.",
+		"price": 39.99,
+		"availability": "instock",
+		"image": "https://m.media-amazon.com/images/I/51SFh0i5HHL._SL1500_.jpg",
+		"brand": "SonicWave",
+		"color": "Blue",
+		"water_resistant": true
+	},
+	{
+		"id": "ftjsn1lcmlpbolrit",
+		"title": "Universal Laptop Charger",
+		"tag": "power and cables",
+		"description": "Power up your laptop with this universal laptop charger. Multiple adapter tips for compatibility with various laptop models.",
+		"price": 49.99,
+		"availability": "instock",
+		"image": "https://m.media-amazon.com/images/I/71ZOXYbsLiL._SL1500_.jpg",
+		"output_voltage": "19V",
+		"color": "Black"
+	},
+	{
+		"id": "ftjsn1ldqlpbom4jc",
+		"title": "Fitness Tracker Bracelet",
+		"tag": "wearables",
+		"description": "Monitor your fitness goals with this stylish fitness tracker bracelet. Track steps, calories, and sleep patterns for a healthier lifestyle.",
+		"price": 29.99,
+		"availability": "instock",
+		"image": "https://m.media-amazon.com/images/I/71wPLzgLNYL._SL1500_.jpg",
+		"brand": "FitStyle",
+		"color": "Pink",
+		"water_resistant": true
+	},
+	{
+		"title": "Type C to C Cable",
+		"tag": "power and cable",
+		"price": "13",
+		"image": "https://m.media-amazon.com/images/I/61g9F6LXKqL._SL1500_.jpg",
+		"description": "This is a fast type c to c data cable.",
+		"id": "ftjsnp8lpfg7kdr"
+	}
+]

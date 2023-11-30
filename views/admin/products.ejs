@@ -12,6 +12,7 @@
 			<p class="p"><%= item.description %></p>
 			<div>
 				<form action="/admin/delete-product" method="post">
+					<input type="hidden" name="itemID" value="<%= item.id %>">
 					<button type="submit"><img src="/assets/delete.svg" alt="" /></button>
 				</form>
 				<!-- <a href="/admin/delete-product"><img src="/assets/delete.svg" alt="" /></a> -->

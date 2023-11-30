@@ -49,7 +49,8 @@ export default class Item {
 
 	static deleteByID(id) {
 		getItemsFromFile((products) => {
-			const item = products.find(p => p.id === id)
+			const item = products.find((p) => p.id === id);
+			console.log(item);
 			const updatedItems = products.filter((p) => p.id !== id);
 			fs.writeFile(pathOfData, JSON.stringify(updatedItems), (err) => {
 				if (!err) {
