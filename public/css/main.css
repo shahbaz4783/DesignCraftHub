@@ -1305,12 +1305,11 @@ svg {
   transform: rotate(-90deg);
 }
 
-.cart-item-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6em;
+.cart-item-container .title-head {
+  text-align: left;
 }
 .cart-item-container .cart-item-card {
+  text-align: center;
   border: 2px solid blue;
 }
 .cart-item-container .cart-item-card .cart-item-img {
@@ -1322,7 +1321,7 @@ svg {
   mix-blend-mode: multiply;
 }
 .cart-item-container .cart-item-card .cart-item-title {
-  background-color: pink;
+  text-align: left;
 }
 
 :root {

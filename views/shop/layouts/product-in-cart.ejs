@@ -2,32 +2,29 @@
 	<% if (items.length > 0) { %>
 	<table>
 		<thead>
-			<td></td>
-			<td>Title</td>
-			<td>Quantity</td>
-			<td>Price</td>
-			<td>Total</td>
-			<td></td>
+            <th></th>
+			<th class="title-head">Product Details</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Total</th>
 		</thead>
 		<% items.forEach(item => { %>
 		<tr class="cart-item-card">
 			<td class="cart-item-img">
 				<img src="<%= item.itemData.image %>" alt="" />
 			</td>
-			<td>
+			<td class="cart-item-title">
 				<h3><%= item.itemData.title %></h3>
+                <form action="/delete-cart-item" method="post">
+					<input type="hidden" name="itemID" value="<%= item.itemData.id %>" />
+					<button type="submit">
+                        Remove
+                    </button>
+				</form>
 			</td>
 			<td><p><%= item.qty %></p></td>
 			<td><p><%= item.itemData.price %></p></td>
 			<td><p><%= item.itemData.price * item.qty %></p></td>
-			<td>
-				<form action="/delete-cart-item" method="post">
-					<input type="hidden" name="itemID" value="<%= item.itemData.id %>" />
-					<button type="submit">
-						<img src="/assets/delete.svg" alt="" />
-					</button>
-				</form>
-			</td>
 		</tr>
 		<% }) %>
 	</table>

@@ -1,16 +1,12 @@
 .cart-item-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6em;
 
-
+     .title-head {
+            text-align: left;
+        }
+    
     .cart-item-card {
+        text-align: center;
         border: 2px solid blue;
-        // display: grid;
-        // grid-template-columns: repeat(5, 1fr);
-        // align-items: center;
-        // justify-content: center;
-        // gap: 0.6em;
 
         .cart-item-img {
             width: 10%;
@@ -21,7 +17,7 @@
             }
         }
         .cart-item-title {
-            background-color: pink;
+            text-align: left;
         }
     }
 }
