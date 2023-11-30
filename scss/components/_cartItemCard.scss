@@ -1,0 +1,27 @@
+.cart-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+
+
+    .cart-item-card {
+        border: 2px solid blue;
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        // align-items: center;
+        // justify-content: center;
+        // gap: 0.6em;
+
+        .cart-item-img {
+            width: 10%;
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                mix-blend-mode: multiply;
+            }
+        }
+        .cart-item-title {
+            background-color: pink;
+        }
+    }
+}

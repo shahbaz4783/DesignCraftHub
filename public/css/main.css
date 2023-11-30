@@ -1305,6 +1305,26 @@ svg {
   transform: rotate(-90deg);
 }
 
+.cart-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.cart-item-container .cart-item-card {
+  border: 2px solid blue;
+}
+.cart-item-container .cart-item-card .cart-item-img {
+  width: 10%;
+}
+.cart-item-container .cart-item-card .cart-item-img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  mix-blend-mode: multiply;
+}
+.cart-item-container .cart-item-card .cart-item-title {
+  background-color: pink;
+}
+
 :root {
   --theme: #fafafa;
   --color1: #c7eeff;

@@ -1,24 +1,7 @@
 <%- include('../partials/dochead') %>
 <%- include('../partials/navigation') %>
-<main class="all-products">
-    <section>
-        <% if (items.length > 0) { %>
-            <% items.forEach(item => { %>
-                <div>
-                    <h3><%= item.itemData.title %></h3>
-                    <p><%= item.qty %></p>
-                    <form action="/delete-cart-item" method="post">
-                        <input type="hidden" name="itemID" value="<%= item.itemData.id %>">
-                        <button type="submit">
-                            <img src="/assets/delete.svg" alt="">
-                        </button>
-                    </form>
-                </div>
-          <%  }) %>
-        <% } else { %> 
-        <h1>Your CART is EMPTY!!</h1>
-        <% } %>
-    </section>
+<main class="cart-page">
+    <%- include('./layouts/product-in-cart') %>
 </main>
 <%- include('../partials/footer') %>
 <%- include('../partials/docbottom') %>
