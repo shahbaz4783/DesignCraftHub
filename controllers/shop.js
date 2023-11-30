@@ -33,9 +33,21 @@ export const getStore = (req, res) => {
 };
 
 export const getCart = (req, res) => {
-	res.render('shop/cart.ejs', {
-		pageTitle: 'Your Cart'
-	})
+	Cart.getCartContent((cart) => {
+		Item.fetchAll((items) => {
+			const itemInCart = [];
+			for (let item of items) {
+				const cartItemData = cart.items.find((p) => p.id === item.id);
+				if (cartItemData) {
+					itemInCart.push({ itemData: item, qty: cartItemData.qty });
+				}
+			}
+			res.render('shop/cart.ejs', {
+				pageTitle: 'Your Cart',
+				items: itemInCart,
+			});
+		});
+	});
 }
 
 export const postCart = (req, res) => {
@@ -45,6 +57,14 @@ export const postCart = (req, res) => {
 	})
 	res.redirect('/cart')
 }
+
+export const deleteItemFromCart = (req, res) => {
+	const itemID = req.body.itemID;
+	Item.findByID(itemID, (item) => {
+		Cart.deleteItem(itemID, item.price);
+	});
+	res.redirect('/cart');
+};
 
 export const getCheckout = (req, res) => {
 	res.render('shop/checkout.ejs', {

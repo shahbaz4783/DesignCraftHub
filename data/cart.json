@@ -1,13 +1,1 @@
-{
-	"items": [
-		{ "id": "ftjsn1kwplpboi6jm", "qty": 3 },
-		{ "id": "ftjsn1l33lpbojupf", "qty": 1 },
-		{ "id": "ftjsn1l4mlpbok2x8", "qty": 2 },
-		{ "id": "ftjsn1lcmlpbolrit", "qty": 1 },
-		{ "id": "ftjsn1lbdlpbolfal", "qty": 3 },
-		{ "id": "ftjsn1ldqlpbom4jc", "qty": 1 },
-		{ "id": "ftjsn1kyglpbois8r", "qty": 2 },
-		{ "id": "ftjsn1la9lpbol4ue", "qty": 2 }
-	],
-	"totalPrice": 799.8499999999999
-}
+{"items":[],"totalPrice":1.4210854715202004e-14}

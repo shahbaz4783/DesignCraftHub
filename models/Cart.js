@@ -30,11 +30,11 @@ export default class Cart {
 
 	static getCartContent(cb) {
 		fs.readFile(pathOfCart, (err, content) => {
+			const cart = JSON.parse(content);
 			if (err) {
 				cb([]);
 			} else {
-				const cart = JSON.parse(content);
-				cb(cart.items || []);
+				cb(cart);
 			}
 		});
 	}
@@ -46,8 +46,11 @@ export default class Cart {
 			}
 			const updatedCart = { ...JSON.parse(content) };
 			const item = updatedCart.items.find((p) => p.id === id);
-			const itemQty = item.qty;
+			if (!item) {
+				return;
+			}
 
+			const itemQty = item.qty;
 			updatedCart.items = updatedCart.items.filter((p) => p.id !== id);
 			updatedCart.totalPrice = updatedCart.totalPrice - itemPrice * itemQty;
 
